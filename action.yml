@@ -1,0 +1,36 @@
+name: "AI Label PR"
+description: "Auto-label PRs with AI — size labels (XS-XXL) and type labels (feature, fix, docs, refactor)"
+author: "Ofer Shapira"
+
+inputs:
+  provider:
+    description: "AI provider: openai or anthropic"
+    required: false
+    default: "openai"
+  model:
+    description: "Model to use"
+    required: false
+    default: "gpt-4o-mini"
+  api-key:
+    description: "API key for the AI provider"
+    required: true
+  size-labels:
+    description: "Apply size labels (XS/S/M/L/XL/XXL)"
+    required: false
+    default: "true"
+  type-labels:
+    description: "Apply type labels using AI (feature/fix/docs/refactor/test/chore)"
+    required: false
+    default: "true"
+  github-token:
+    description: "GitHub token for API access (defaults to GITHUB_TOKEN)"
+    required: false
+    default: ${{ github.token }}
+
+runs:
+  using: "node20"
+  main: "dist/index.js"
+
+branding:
+  icon: "tag"
+  color: "purple"
