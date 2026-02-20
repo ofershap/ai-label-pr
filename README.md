@@ -43,7 +43,7 @@ Existing size/type labels are removed before adding the new ones, so each PR get
 | `provider`     | AI provider: `openai` or `anthropic`    | `openai`              |
 | `model`        | Model to use                            | `gpt-4o-mini`         |
 | `api-key`      | API key for the AI provider             | required              |
-| `size-labels`  | Apply size labels (XS/S/M/L/XL/XXL)    | `true`                |
+| `size-labels`  | Apply size labels (XS/S/M/L/XL/XXL)     | `true`                |
 | `type-labels`  | Apply type labels using AI              | `true`                |
 | `github-token` | GitHub token (defaults to GITHUB_TOKEN) | `${{ github.token }}` |
 
@@ -94,8 +94,7 @@ npm run lint
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-ofershap-blue?logo=linkedin)](https://linkedin.com/in/ofershap)
 [![GitHub](https://img.shields.io/badge/GitHub-ofershap-black?logo=github)](https://github.com/ofershap)
-
-<a href="https://gitshow.dev/ofershap"><img src="https://gitshow.dev/api/og/ofershap" alt="Ofer Shapira developer portfolio - MCP servers, GitHub Actions, TypeScript libraries" width="400"></a>
+[![Portfolio](https://img.shields.io/badge/Portfolio-gitshow.dev-orange)](https://gitshow.dev/ofershap)
 
 ## License
 
