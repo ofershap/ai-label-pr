@@ -1,7 +1,7 @@
 {
   "name": "ai-label-pr",
   "version": "1.0.0",
-  "description": "GitHub Action that auto-labels PRs using AI \u2014 size labels (XS-XXL) and type labels (feature, fix, docs, refactor)",
+  "description": "GitHub Action that auto-labels PRs using AI — size labels (XS-XXL) and type labels (feature, fix, docs, refactor)",
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
